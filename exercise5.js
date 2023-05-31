@@ -29,7 +29,9 @@ console.log(`${twentyCents} + ${tenCents} = ${twentyCents + tenCents}`)
 
 let fixedTwenty = twentyCents.toFixed(2);
 let fixedTen = tenCents.toFixed(2);
-console.log(fixedTwenty + fixedTen) //why is this not working?
+console.log(fixedTwenty + fixedTen)
+    //why is this not working? 
+    // A => toFixed returns STRING so it combines with two strings which are fixedTwenty & fixedTen
 
 function makeInteger(num) {
     if (Number.isInteger(num)) {

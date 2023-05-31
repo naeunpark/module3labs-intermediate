@@ -11,7 +11,7 @@ const myOwnArray = ['me', 'me', 'mom', 'mom', 'dad', 'dad']
 
 function unique(duplicatesArray) {
     let uniqueArray = [];
-    duplicatesArray.filter(item => {
+    duplicatesArray.forEach(item => {
         if (!uniqueArray.includes(item))
             uniqueArray.push(item);
     })
